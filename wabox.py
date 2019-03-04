@@ -9,15 +9,16 @@ token = "1f413e0f2868ed11a1ad5c2472a2a1c85c7b88ab1f337"
 contact = sl
 rg = len(contact)
 msg = """
-*Jokowi For Indonesia*
+*Visit labuan Bajo 2019*
 
-Inilah keberhasilan Pak Jokowi
-dalam pembangunan Indonesia
-dalam kurun waktu 5 Tahun..
+Destinasi Favorit 
+turis lokal dan mancanegara.
 
-*LANJUTKAN..!!!*
+Surga di Timur Indonesia,
+kunjungi Web Resmi Kami
+dibawah ini..
 
-_send with Whatsapp API_
+_Otoritas Pariwisata Labuan Bajo_
 
 """
 
@@ -26,7 +27,7 @@ for i in range(rg):
     data = urllib.urlencode({
         "token": token,
         "uid": "6281213655573",
-        "to": contact[i],
+        "to": "62" + contact[i],
         "custom_uid": uid,
         "text": msg
     })
@@ -43,12 +44,12 @@ for i in range(rg):
     data = urllib.urlencode({
         "token": token,
         "uid": "6281213655573",
-        "to": contact[i],
+        "to": "62" + contact[i],
         "custom_uid": uid,
-        "url": "https://www.instagram.com/jokowi.marufamin2019/?hl=id",
-        "description" : "Pembangunan Merata di Indonesia",
-        "caption" : "*keberhasilan Jokowi dalam 5 Tahun ini..*",
-        "url_thumb": "https://www.dw.com/image/45315111_303.jpg",
+        "url": "https://www.indonesia.travel/gb/en/destinations/bali-nusa-tenggara/labuan-bajo",
+        "description" : "Destinasi Wisata di Timur Indonesia",
+        "caption" : "Visit Labuan Bajo 2019",
+        "url_thumb": "https://www.indonesia.travel/content/dam/indtravelrevamp/en/destinations/bali-nusa-tenggara/east-nusa-tenggara/labuan-bajo/LB1.jpg",
       
     })
 
@@ -56,4 +57,4 @@ for i in range(rg):
     response = urllib2.urlopen(req)
     result = response.read()
 
-    print("succes send to {}".format(contact[i]))
+    print("succes send to {}".format("62" + contact[i]))
