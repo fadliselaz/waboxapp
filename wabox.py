@@ -1,6 +1,7 @@
 import urllib
 import urllib2
 import uuid
+import time
 
 with open("contact.txt", "r") as of:
     sl = of.read().split()
@@ -59,7 +60,9 @@ for i in range(rg):
     response = urllib2.urlopen(req)
     result = response.read()
 
-    print("succes send to {}".format("62" + contact[i]))
+    print("succes send to {}".format(contact[i]))
+    print("message terkirim: {}".format(i))
+    time.sleep(5)
 
 
 # image with link and description
