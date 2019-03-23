@@ -10,32 +10,50 @@ token = "1f413e0f2868ed11a1ad5c2472a2a1c85c7b88ab1f337"
 contact = sl
 rg = len(contact)
 msg = """
-*Tahukah Anda?*
+*Grosir Pengharum Ruangan/Mobil Multiguna Murah!!!*
 
-1. Bahwa biaya perawatan kamar (saja) di Rumah Sakit Singapore bisa mencapai *$688 per- malamnya?* Dan itu setara dengan *Rp.7,2 Juta??*
+Welcome Reseller!!dropshipper!!dan terima partai besar!! Parfum Pewangi / pengharum aroma ruangan, Mobil, toilet dll.. 
 
-2. Bahwa Allianz menanggung semua biaya perawatan, obat, operasi, donor transplantasi, pendamping, dll, sesuai tagihan dengan limit hingga 25 M??
+Ada 13 Varian aroma : 
+1. Coffee = aroma kopi 
+2. Lemon = aroma lemon 
+3. Bubble Gum = aroma permen karet
+4. Vanila = aroma vanila
+5. Sweet Army = aromanya strong (warna hijau) 
+6. Sweet honey = aromanya medium (warna merah) 
+7. Sweet fresh = aromanya soft (warna biru / ungu) 
+8. Green tea
+9. Sweet apple
+10. Sweet strawberry
+11. Sweet Lecy
+12. Sweet manggo
+13. Cappucino
 
-3. Bahwa dengan setoran FLAT Premi Rupiah, Allianz akan menanggung biaya Rumah sakit dalam bentuk Dollar hingga ke seluruh dunia?
+*Eceran Rp 15.000 per pc*
 
-*Yuni Pratiwi*
-Financial Advisor
-081311009769
-Allianz Life Indonesia
-_Happily Helping Others_
+Harga grosir!!! 
+*10-100 pcs harga Rp 11.000 per pc*
+*Diatas 100 pcs harga Rp 10.000 per pc*
+Boleh campur2 Varian Aroma!! 
+Non Alkohol!!
+_Lihat contoh gambar pada Profile Photo_
 
+COD hanya untuk area Cipinang, Duren Sawit, Pondok Kelapa, Pondok Bambu, Buaran
+contact : *0813 8206 2955*
+IG : *@shopnshopperz*
 """
 
 
 #Message saja
 for i in range(rg):
+
     uid = str(uuid.uuid1())
     data = urllib.urlencode({
         "token": token,
-        "uid": "6281932006544",
+        "uid": "6281282632197",
         "to": "62" + contact[i],
         "custom_uid": uid,
-        "text": msg
+        "text" : msg,
     })
 
     req = urllib2.Request('https://www.waboxapp.com/api/send/chat', data)
@@ -43,26 +61,8 @@ for i in range(rg):
     result = response.read()
 
     print("succes send to {}".format(contact[i]))
-
-    uid = str(uuid.uuid1())
-    data = urllib.urlencode({
-        "token": token,
-        "uid": "6281932006544",
-        "to": "62" + contact[i],
-        "custom_uid": uid,
-        "url": "https://gdurl.com/ZUHC/download",
-        "description" : "Allianz Life Indonesia - Happily Helping Others",
-        "caption" : "Tahukah Anda ?",
-        "url_thumb" : "https://gdurl.com/Jt49",
-    })
-
-    req = urllib2.Request('https://www.waboxapp.com/api/send/link', data)
-    response = urllib2.urlopen(req)
-    result = response.read()
-
-    print("succes send to {}".format(contact[i]))
-    print("message terkirim: {}".format(i))
-    time.sleep(5)
+    print("message terkirim: {}".format(i+1))
+    time.sleep(10)
 
 
 # image with link and description
@@ -70,15 +70,20 @@ for i in range(rg):
 #     uid = str(uuid.uuid1())
 #     data = urllib.urlencode({
 #         "token": token,
-#         "uid": "6281932006544",
+#         "uid": "6281282632197",
 #         "to": "62" + contact[i],
 #         "custom_uid": uid,
-#         "url": "https://www.indonesia.travel/gb/en/destinations/bali-nusa-tenggara/labuan-bajo",
-#         "description" : "Destinasi Wisata di Timur Indonesia",
-#         "caption" : "Visit Labuan Bajo 2019",
-#         "url_thumb": "https://www.indonesia.travel/content/dam/indtravelrevamp/en/destinations/bali-nusa-tenggara/east-nusa-tenggara/labuan-bajo/LB1.jpg",
+#         "url": "https://www.instagram.com/p/BvUKJ97pVsu/?utm_source=ig_share_sheet&igshid=1tyuu1yswpnnv",
+#         "description" : "Pengharum Ruangan Murah",
+#         "caption": "Pengharum Ruangan Murah..",
+#         "url_thumb": "https://gdurl.com/S6oE",
       
 #     })
+
+#     req = urllib2.Request('https://www.waboxapp.com/api/send/link', data)
+#     response = urllib2.urlopen(req)
+#     result = response.read()
+
 
 # any file
 # for i in range(rg):
@@ -94,8 +99,5 @@ for i in range(rg):
 #         "url_thumb" : "https://gdurl.com/Jt49",
 #     })
 
-#     req = urllib2.Request('https://www.waboxapp.com/api/send/link', data)
-#     response = urllib2.urlopen(req)
-#     result = response.read()
 
 #     print("succes send to {}".format("62" + contact[i]))
