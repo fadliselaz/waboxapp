@@ -10,37 +10,29 @@ token = "1f413e0f2868ed11a1ad5c2472a2a1c85c7b88ab1f337"
 contact = sl
 rg = len(contact)
 msg = """
-*Grosir Pengharum Ruangan/Mobil Multiguna Murah!!!*
+*Service Handphone Bergaransi*
+*ADE - CELL*
 
-Welcome Reseller!!dropshipper!!dan terima partai besar!! Parfum Pewangi / pengharum aroma ruangan, Mobil, toilet dll.. 
+Terima Service Handphone,
+-upgrade software,
+-boodlop stock logo,
+-lupa pola,
+-battray,
+-accesoris
+-mati total,
+-ganti touchscreen lcd,
+-instal laptop cpu,
+-pulsa,token listrik
+-dan lain lainnya.
 
-Ada 13 Varian aroma : 
-1. Coffee = aroma kopi 
-2. Lemon = aroma lemon 
-3. Bubble Gum = aroma permen karet
-4. Vanila = aroma vanila
-5. Sweet Army = aromanya strong (warna hijau) 
-6. Sweet honey = aromanya medium (warna merah) 
-7. Sweet fresh = aromanya soft (warna biru / ungu) 
-8. Green tea
-9. Sweet apple
-10. Sweet strawberry
-11. Sweet Lecy
-12. Sweet manggo
-13. Cappucino
+ *KAMI SIAP MELAYANI ANDA 
+ DENGAN SENANG HATI.*
 
-*Eceran Rp 15.000 per pc*
+Jl. Tegal Parang Selatan 1
+no 5b.
+Buka Setiap hari
+jam 7pagi - 12 malam.
 
-Harga grosir!!! 
-*10-100 pcs harga Rp 11.000 per pc*
-*Diatas 100 pcs harga Rp 10.000 per pc*
-Boleh campur2 Varian Aroma!! 
-Non Alkohol!!
-_Lihat contoh gambar pada Profile Photo_
-
-COD hanya untuk area Cipinang, Duren Sawit, Pondok Kelapa, Pondok Bambu, Buaran
-contact : *0813 8206 2955*
-IG : *@shopnshopperz*
 """
 
 
@@ -50,7 +42,7 @@ for i in range(rg):
     uid = str(uuid.uuid1())
     data = urllib.urlencode({
         "token": token,
-        "uid": "6281282632197",
+        "uid": "6281213655573",
         "to": "62" + contact[i],
         "custom_uid": uid,
         "text" : msg,
